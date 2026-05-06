@@ -2,6 +2,8 @@ import ContactForm from './ContactForm.jsx'
 import { Download } from 'lucide-react'
 
 function Contact() {
+  const cvUrl = `${import.meta.env.BASE_URL}Mariano_Nehu%C3%A9n_Lotero_Rol%C3%B3n_CV.pdf`
+
   return (
     <section
       id="contact"
@@ -52,7 +54,7 @@ function Contact() {
           LinkedIn
         </a>
         <a
-          href="/Mariano_Nehu%C3%A9n_Lotero_Rol%C3%B3n_CV.pdf"
+          href={cvUrl}
           download="CV-Mariano-Lotero-Rolon.pdf"
           className="flex items-center gap-2 rounded-xl border border-[var(--color-border)] bg-transparent px-5 py-3 text-sm font-semibold text-[var(--color-text-strong)] transition hover:border-[var(--color-icon)] hover:text-[var(--color-icon)]"
         >
